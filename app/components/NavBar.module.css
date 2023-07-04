@@ -1,0 +1,75 @@
+.headerBlock{
+    height: fit-content;
+    display: inline-flex;
+}
+
+.headerBlock button{
+    width: fit-content;
+    border: none;
+    display: block;
+    margin-left: 2px;
+    border-radius: 4px;
+}
+.translateSVG{
+    width: 28px;
+    padding-top: 4px;
+    background-color: #ffffff00;
+}
+
+.languageOptionList{
+    background: linear-gradient(to left, #ffffff33, #ffffff19);
+    clip-path: path("M105.467 -3.7301e-07C106.571 -3.24728e-07 107.467 0.89543 107.467 2L107.467 11.1892C107.467 12.3402 107.962 13.4354 108.827 14.1948L112.214 17.1683C113.146 17.9875 113.115 19.4499 112.148 20.2287L108.957 22.7992C108.015 23.5585 107.467 24.7038 107.467 25.9142L107.467 35C107.467 36.1046 106.571 37 105.467 37L4.00001 37C1.79086 37 -1.53904e-06 35.2091 -1.44248e-06 33L-1.74846e-07 4C-7.8281e-08 1.79086 1.79086 -4.90482e-06 4 -4.80826e-06L105.467 -3.7301e-07Z");
+    width: 113px; 
+    height: 37px;
+    display: inline-flex;
+    justify-content:space-evenly;
+    vertical-align: middle;
+
+}
+.languageOptionList span{
+    background-color: #ffffff00;
+    padding: 8px 2px 8px 0px;
+    color: #E0E0FF;
+    font-size: 16x;
+    display: flex;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.languageOption{
+    background-color: #ffffff00;
+    width: 20px;
+    position: relative;
+    left: -3px;
+}
+.languageOptionList span:hover{
+    cursor: pointer;
+    animation: hoverLang 0.08s;
+    animation-fill-mode: forwards;
+}
+
+.headerBlock button:hover{
+    cursor: pointer;
+    animation: hoverTranslator .1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hoverLang{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+
+@keyframes hoverTranslator{
+    0%{
+    }
+    25%{
+        background-color: #ffffff19;
+    }
+    100%{
+        background-color: #ffffff33;
+    }
+}
