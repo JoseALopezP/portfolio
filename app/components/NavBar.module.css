@@ -1,33 +1,71 @@
 .headerBlock{
+    background: linear-gradient(#021A31, #03294D);
+    backdrop-filter: blur(10px);
     height: fit-content;
     display: inline-flex;
+    align-items: center;
+    width: 100vw;
+    height: 64px;
+    justify-content: space-between;
+}
+.navList{
+    height: 100%;
+}
+.navList ul{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 0px;
+}
+.navList ul li{
+    display: inline-block;
+    width: 5vw;
+    padding: 4px;
+    margin: 0px 1vw 0px 1vw;
+    height: 100%;
+}
+.navList ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #FAFAFF;
+    height: 100%;
+    width: 100%;
 }
 
-.headerBlock button{
+
+.languageOptionsBlock{
+    display: inline-flex;
+    margin-right: 10px;
+}
+.languageOptionsBlock button{
     width: fit-content;
     border: none;
     display: block;
     margin-left: 2px;
     border-radius: 4px;
+    background-color: transparent;
+    height: 38px;
+    width: 38px;
 }
 .translateSVG{
     width: 28px;
     padding-top: 4px;
-    background-color: #ffffff00;
 }
 
 .languageOptionList{
     background: linear-gradient(to left, #ffffff33, #ffffff19);
     clip-path: path("M105.467 -3.7301e-07C106.571 -3.24728e-07 107.467 0.89543 107.467 2L107.467 11.1892C107.467 12.3402 107.962 13.4354 108.827 14.1948L112.214 17.1683C113.146 17.9875 113.115 19.4499 112.148 20.2287L108.957 22.7992C108.015 23.5585 107.467 24.7038 107.467 25.9142L107.467 35C107.467 36.1046 106.571 37 105.467 37L4.00001 37C1.79086 37 -1.53904e-06 35.2091 -1.44248e-06 33L-1.74846e-07 4C-7.8281e-08 1.79086 1.79086 -4.90482e-06 4 -4.80826e-06L105.467 -3.7301e-07Z");
     width: 113px; 
-    height: 37px;
+    height: 38px;
     display: inline-flex;
     justify-content:space-evenly;
     vertical-align: middle;
 
 }
 .languageOptionList span{
-    background-color: #ffffff00;
     padding: 8px 2px 8px 0px;
     color: #E0E0FF;
     font-size: 16x;
@@ -37,7 +75,6 @@
 }
 
 .languageOption{
-    background-color: #ffffff00;
     width: 20px;
     position: relative;
     left: -3px;
