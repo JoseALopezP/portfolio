@@ -1,9 +1,12 @@
 import './globals.css'
-import Head from 'next/head'
-import { Inter } from 'next/font/google'
+import { League_Spartan, Inter } from 'next/font/google'
 import { NavBar } from './components/NavBar'
 
 const inter = Inter({ subsets: ['latin'] })
+const leagueSpartan = League_Spartan({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'José López',
@@ -12,8 +15,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={inter.className}>
+      <body className={leagueSpartan.className}>
         <NavBar/>
         {children}
       </body>

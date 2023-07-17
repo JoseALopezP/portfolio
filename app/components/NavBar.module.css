@@ -8,6 +8,12 @@
     height: 64px;
     justify-content: space-between;
 }
+.fillerNavBarIcon{
+    width: 120px;
+}
+.logoIcon{
+    margin-left: 10px;
+}
 .navList{
     height: 100%;
 }
@@ -19,13 +25,24 @@
 }
 .navList ul li{
     display: inline-block;
-    width: 5vw;
+    width: 100px;
     padding: 4px;
     margin: 0px 1vw 0px 1vw;
-    height: 100%;
+    height: calc(100% - 12px);
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+.navList ul li:hover{
+    animation: hoverNavList .1s;
+    animation-fill-mode: both;
 }
 .navList ul li a{
     display: flex;
+    font-weight: 600;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -33,6 +50,10 @@
     color: #FAFAFF;
     height: 100%;
     width: 100%;
+}
+.navList ul li a:hover{
+    animation: hoverNavFont .1s;
+    animation-fill-mode: both;
 }
 
 
@@ -108,5 +129,55 @@
     }
     100%{
         background-color: #ffffff33;
+    }
+}
+
+@keyframes hoverNavList{
+    0%{
+        border-width: 4px;
+        border-style: solid;
+        border-color: transparent;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+    }
+    25%{
+        border-width: 4px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, #00cc8100 40%, #4cffbd 50%, #00cc8100 60%) 1;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+    }
+    50%{
+        border-width: 4px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, #00cc8100 30%, #4cffbd 50%, #00cc8100 70%) 1;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+    }
+    75%{
+        border-width: 4px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, #00cc8100 20%, #4cffbd 50%, #00cc8100 80%) 1;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+    }
+    100%{
+        
+        border-width: 4px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, #00cc8100 10%, #4cffbd 50%, #00cc8100 90%) 1;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+    }
+}
+
+@keyframes hoverNavFont{
+    100%{
+        color: #4CFFBD;
     }
 }

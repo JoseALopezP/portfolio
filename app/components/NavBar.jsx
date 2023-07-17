@@ -5,6 +5,7 @@ import Link from 'next/link'
 export function NavBar () {
     return (
         <header className={`${styles.headerBlock}`}>
+            <span className={`${styles.fillerNavBarIcon}`}></span>
             <nav className={`${styles.navList}`}>
                 <ul>
                     <li><Link href="#">Home</Link></li>
