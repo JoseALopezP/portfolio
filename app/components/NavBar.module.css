@@ -1,5 +1,5 @@
 .headerBlock{
-    background: linear-gradient(#021A31, #03294D);
+    background: linear-gradient(#021A31, #ffffff00);
     backdrop-filter: blur(10px);
     height: fit-content;
     display: inline-flex;
@@ -7,6 +7,7 @@
     width: 100vw;
     height: 64px;
     justify-content: space-between;
+    z-index: 100;
 }
 .fillerNavBarIcon{
     width: 120px;
@@ -97,6 +98,7 @@
 
 .languageOption{
     width: 20px;
+    display: inline-block;
     position: relative;
     left: -3px;
 }
