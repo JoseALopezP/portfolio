@@ -1,3 +1,37 @@
-.holaSoy{
-    z-index: 1;
+.presentationBlock{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.presentationTextBlock{
+    background: -webkit-linear-gradient(0turn, #00FFA1, #5295FE, #6110DB);
+    margin-top: 160px;
+    -webkit-background-clip: text;
+        background-clip: text;
+    -webkit-text-fill-color: transparent;
+    flex-direction: column;
+}
+.presentationText1, .presentationText2, .presentationText3{
+    margin: 0px;
+    line-height: .9;
+}
+
+.presentationText1{
+    -webkit-text-fill-color: #FAFAFF;
+    font-size: 47px;
+}
+.presentationText2{
+    font-family: 'Play', sans-serif;
+    font-size: 90px;
+}
+.presentationText3{
+    line-height: 1.5;
+    font-family: 'Play', sans-serif;
+    font-size: 47px;
+}
+.presentationText3 strong{
+    font-size: 23px;
+    -webkit-text-fill-color: #FAFAFF;
+    vertical-align: middle;
+    font-weight: 400;
 }

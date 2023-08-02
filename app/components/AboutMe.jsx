@@ -1,6 +1,6 @@
-import styles from './Presentation.module.css'
+import styles from './AboutMe.module.css'
 
-export function Presentation () {
+export function AboutMe () {
     return (
         <>
             <div className={`${styles.presentationBlock}`}>

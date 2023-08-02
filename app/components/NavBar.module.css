@@ -60,7 +60,7 @@
 
 .languageOptionsBlock{
     display: inline-flex;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .languageOptionsBlock button{
     width: fit-content;
@@ -90,10 +90,13 @@
 .languageOptionList span{
     padding: 8px 2px 8px 0px;
     color: #E0E0FF;
-    font-size: 16x;
     display: flex;
     vertical-align: middle;
     text-align: center;
+}
+.languageOptionList span p{
+    margin: 4px 0px 0px 2px;
+    font-size: 16x;
 }
 
 .languageOption{
