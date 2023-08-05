@@ -2,7 +2,7 @@ import styles from './AboutMe.module.css'
 
 export function AboutMe () {
     return (
-        <>
+        <div className={`${styles.wavesBlock}`}>
             <div className={`${styles.AboutMeBlock}`}>
                 <svg className={`${styles.AboutMeIcon}`} width="138" height="200" viewBox="0 0 138 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1_419)">
@@ -22,6 +22,6 @@ export function AboutMe () {
                 <div className={`${styles.AboutMeTechnologies}`}></div>
                 <div className={`${styles.AboutMeButtons}`}></div>
             </div>
-        </>
+        </div>
     )
 }
