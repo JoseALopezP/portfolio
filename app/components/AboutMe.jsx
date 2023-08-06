@@ -19,8 +19,12 @@ export function AboutMe () {
                 </svg>
                 <h4 className={`${styles.aboutMeTitle}`}>Sobre mí</h4>
                 <p className={`${styles.aboutMeTextBody}`}>Tengo 23 años y soy muy cool bla bla bla bla bla. Acá pone una breve descripción tuya, lo que pinte. Entre tres y cinco renglones está perfect. Tengo 23 años y soy muy cool bla bla bla bla bla. Acá pone una breve descripción tuya, lo que pinte.</p>
-                <div className={`${styles.AboutMeTechnologies}`}></div>
-                <div className={`${styles.AboutMeButtons}`}></div>
+                <div className={`${styles.AboutMeTechnologies}`}>
+
+                </div>
+                <div className={`${styles.AboutMeButtons}`}>
+
+                </div>
             </div>
         </div>
     )
