@@ -1,48 +1,48 @@
 import styles from './AboutMe.module.css'
 import Image from 'next/image'
 
-const technologiesList = [{
-    name: 'JavaScript',
-    route: '/public/images/icons/.svg',
-    name: '',
+const TechnologiesList = [{
+    tName: 'JavaScript',
+    route: './images/icons/javascript.svg'
 },{
-    name: 'React.js',
-    route: '/public/images/icons/.svg',
-    name: '',
+    tName: 'React.js',
+    route: './images/icons/react.svg'
 },{
-    name: 'HTML',
-    route: '/public/images/icons/.svg',
-    name: '',
+    tName: 'HTML',
+    route: './images/icons/html5.svg'
 },{
-    name: 'CSS',
-    route: '/public/images/icons/.svg',
-    name: '',
+    tName: 'CSS',
+    route: './images/icons/css3.svg'
 },{
-    name: 'Node.js',
-    route: '/public/images/icons/.svg',
-    name: '',
+    tName: 'Node.js',
+    route: './images/icons/node.svg'
 },{
-    name: 'Firebase',
-    route: '/public/images/icons/.svg',
-    name: '',
+    tName: 'Firebase',
+    route: './images/icons/firebase.svg'
 },{
-    name: 'Sass',
-    route: '/public/images/icons/.svg',
-    name: '',
+    tName: 'Sass',
+    route: './images/icons/sass.svg'
 },{
-    name: 'Git',
-    route: '/public/images/icons/.svg',
-    name: '',
+    tName: 'Git',
+    route: './images/icons/git.svg'
 },{
-    name: 'Next.js',
-    route: '/public/images/icons/.svg',
-    name: '',
+    tName: 'Next.js',
+    route: './images/icons/next.svg'
 }]
 
-export function AboutMe () {
+export function Technologies() {
     return (
         <>
-
+            {TechnologiesList.map(({tName, route}) =>(
+                <button key={tName} className={`${styles.technologyIcon}`}>
+                    <Image
+                    src={route}
+                    width={56}
+                    height={56}
+                    alt={tName}
+                    />
+                </button>
+            ))}
         </>
     )
 }
