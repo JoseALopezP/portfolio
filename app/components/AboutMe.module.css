@@ -55,8 +55,10 @@
 }
 .aboutMeLinks{
     width: 240px;
+    height: calc(50px - 10px);
     display: inline-flex;
-    font-size: 24px;
+    vertical-align: middle;
+    font-size: 26px;
     text-shadow: 8px 8px 12px 0px #021a3161;
     background: linear-gradient(30deg, #00FFA1, #5295FE, #6110DB, #00FFA1, #5295FE, #6110DB);
     background-size: 500% 500%;
@@ -66,12 +68,16 @@
     color: #FAFAFF;
     text-decoration: none;
     justify-content: center;
-    vertical-align: middle;
     background-position: 0% 100%;
-    padding: 10px;
+    padding: auto;
 }
 .aboutMeLinks:hover{
     animation: gradient 10s ease alternate infinite;
+}
+.aboutMeLinks svg{
+    width: 30px;
+    height: 40px;
+    margin-right: 8px;
 }
 
 .technologyIcon{
