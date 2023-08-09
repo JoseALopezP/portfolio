@@ -10,18 +10,22 @@
 .AboutMeBlock{
     padding: 200px 20% 200px 20%;
     display: grid;
+    height: 600px;
     grid-template-areas: 
         "👨‍💻 📘"
         "👨‍💻 📖"
+        "👨‍💻 📖"
         "✨ ✨"
         "🔘 🔘";
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     color: #FAFAFF;
 }
 .AboutMeIcon{
     grid-area: 👨‍💻;
     display: flex;
+    width: 70%;
+    height: 80%;
 }
 .aboutMeTitle{
     grid-area: 📘;
@@ -34,13 +38,36 @@
     display: flex;
     font-size: 20px;
 }
-.AboutMeTechnologies{
+.aboutMeTechnologies{
     grid-area: ✨;
     display: flex;
+    justify-content: center;
 }
-.AboutMeAboutMeButtons{
+.aboutMeButtons{
     grid-area: 🔘;
-    display: flex;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+.aboutMeLinks{
+    width: 240px;
+    display: inline-flex;
+    font-size: 24px;
+    text-shadow: 8px 8px 12px 0px #021a3161;
+    background: linear-gradient(30deg, #00FFA1, #5295FE, #6110DB, #00FFA1, #5295FE, #6110DB);
+    background-size: 500% 500%;
+    margin: 0 10px 0 10px;
+    border-radius: 4px;
+    border: solid 2px #FAFAFF;
+    color: #FAFAFF;
+    text-decoration: none;
+    justify-content: center;
+    vertical-align: middle;
+    background-position: 0% 100%;
+    padding: 10px;
+}
+.aboutMeLinks:hover{
+    animation: gradient 10s ease alternate infinite;
 }
 
 .technologyIcon{
@@ -52,6 +79,7 @@
     box-shadow: 8px 8px 12px 0px #021A3125;
     border-radius: 16px;
     background: linear-gradient(-45deg, #FFFFFF32, #CECECE16);
+    
 }
 
 
@@ -70,4 +98,15 @@
     100%{
         transform: translate(0px, 0px);
     }
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 100%;
+	}
+	50% {
+		background-position: 50% 50%;
+	}
+	100% {
+		background-position: 100% 0%;
+	}
 }
