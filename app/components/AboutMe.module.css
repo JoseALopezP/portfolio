@@ -70,9 +70,10 @@
     justify-content: center;
     background-position: 0% 100%;
     padding: auto;
+    line-height: 44px;
 }
 .aboutMeLinks:hover{
-    animation: gradient 10s ease alternate infinite;
+    animation: gradient 8s ease alternate infinite;
 }
 .aboutMeLinks svg{
     width: 30px;
@@ -112,9 +113,6 @@
 @keyframes gradient {
 	0% {
 		background-position: 0% 100%;
-	}
-	50% {
-		background-position: 50% 50%;
 	}
 	100% {
 		background-position: 100% 0%;

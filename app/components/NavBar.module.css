@@ -62,6 +62,9 @@
     display: inline-flex;
     margin-right: 20px;
 }
+.languageOptionsBlock:hover .languageOptionList{
+    display: none;
+}
 .languageOptionsBlock button{
     width: fit-content;
     border: none;
