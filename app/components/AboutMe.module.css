@@ -12,31 +12,35 @@
     display: grid;
     height: 600px;
     grid-template-areas: 
-        "👨‍💻 📘"
         "👨‍💻 📖"
         "👨‍💻 📖"
+        ". ."
         "✨ ✨"
+        ". ."
         "🔘 🔘";
     grid-template-columns: 30% 70%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     color: #FAFAFF;
+}
+.aboutMeArticle{
+    grid-area: 📖;
 }
 .AboutMeIcon{
     grid-area: 👨‍💻;
     display: flex;
-    width: 70%;
-    height: 80%;
+    height: 100%;
+    width: 100%;
 }
 .aboutMeTitle{
-    grid-area: 📘;
     display: flex;
+    margin: 0px;
     font-family: Play;
     font-size: 56px;
 }
 .aboutMeTextBody{
-    grid-area: 📖;
     display: flex;
     font-size: 20px;
+    line-height: 24px;
 }
 .aboutMeTechnologies{
     grid-area: ✨;
