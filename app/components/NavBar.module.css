@@ -59,10 +59,10 @@
     display: inline-flex;
     justify-content: flex-end;
     position: fixed;
-    left: calc(100vw - 180px);
+    left: calc(100vw - 178.5px);
     margin-right: 20px;
 }
-.languageOptionsBlock:active .languageOptionList{
+.languageOptionsBlock:hover .languageOptionList{
     display: inherit;
     animation: langShow 10s;
     animation-fill-mode: forwards;
