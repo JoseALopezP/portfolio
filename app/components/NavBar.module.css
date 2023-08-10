@@ -62,9 +62,12 @@
     left: calc(100vw - 180px);
     margin-right: 20px;
 }
-.languageOptionsBlock:hover .languageOptionList{
+.languageOptionsBlock:active .languageOptionList{
     display: inherit;
+    animation: langShow 10s;
+    animation-fill-mode: forwards;
 }
+
 .languageOptionsBlock button{
     width: fit-content;
     position: fixed;
@@ -83,9 +86,6 @@
     width: 24px;
 }
 
-.languageOptionBlock{
-    display: none;
-}
 
 .languageOptionList{
     display: none;
@@ -93,7 +93,6 @@
     clip-path: path("M105.467 -3.7301e-07C106.571 -3.24728e-07 107.467 0.89543 107.467 2L107.467 11.1892C107.467 12.3402 107.962 13.4354 108.827 14.1948L112.214 17.1683C113.146 17.9875 113.115 19.4499 112.148 20.2287L108.957 22.7992C108.015 23.5585 107.467 24.7038 107.467 25.9142L107.467 35C107.467 36.1046 106.571 37 105.467 37L4.00001 37C1.79086 37 -1.53904e-06 35.2091 -1.44248e-06 33L-1.74846e-07 4C-7.8281e-08 1.79086 1.79086 -4.90482e-06 4 -4.80826e-06L105.467 -3.7301e-07Z");
     width: 113px; 
     height: 38px;
-    display: inline-flex;
     justify-content:space-evenly;
     vertical-align: middle;
 
@@ -107,7 +106,7 @@
 }
 .languageOptionList span p{
     margin: 4px 0px 0px 2px;
-    font-size: 16x;
+    font-size: 16px;
 }
 
 .languageOption{
@@ -179,5 +178,23 @@
 @keyframes hoverNavFont{
     100%{
         color: #4CFFBD;
+    }
+}
+
+@keyframes langShow{
+    0%{
+        opacity: 0;
+        display: inherit;
+    }
+    5%{
+        opacity: 1;
+    }
+    95%{
+        display: inherit;
+        opacity: 1;
+    }
+    100%{
+        display: none;
+        opacity: 0;
     }
 }
