@@ -59,7 +59,6 @@
     display: inline-flex;
     vertical-align: middle;
     font-size: 26px;
-    text-shadow: 8px 8px 12px 0px #021a3161;
     background: linear-gradient(30deg, #00FFA1, #5295FE, #6110DB, #00FFA1, #5295FE, #6110DB);
     background-size: 500% 500%;
     margin: 0 10px 0 10px;
@@ -67,6 +66,7 @@
     border: solid 2px #FAFAFF;
     color: #FAFAFF;
     text-decoration: none;
+    text-shadow: 2px 2px 2px #021a3161;
     justify-content: center;
     background-position: 0% 100%;
     padding: auto;
@@ -79,6 +79,8 @@
     width: 30px;
     height: 40px;
     margin-right: 8px;
+    -webkit-filter: drop-shadow( 2px 2px 2px #021a3161);
+    filter: drop-shadow( 2px 2px 2px #021a3161);
 }
 
 .technologyIcon{
