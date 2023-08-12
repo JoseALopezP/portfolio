@@ -2,6 +2,7 @@ import './globals.css'
 import { League_Spartan, Inter } from 'next/font/google'
 import { NavBar } from './components/NavBar'
 
+
 const inter = Inter({ subsets: ['latin'] })
 const leagueSpartan = League_Spartan({
   subsets: ['latin'],
