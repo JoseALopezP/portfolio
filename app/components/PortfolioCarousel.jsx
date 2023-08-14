@@ -8,6 +8,9 @@ export function PortfolioCarousel() {
   return (
     <>
       <Carousel>
+        {Projects.map(({pName,pTech,pBody,pImg}) =>(
+          
+        ))}
         <div>
             <Image src='./images/icons/sass.svg' width={250} height={250} alt="foto"/>
             <p className="legend">Legend 1</p>
