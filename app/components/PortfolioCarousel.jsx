@@ -1,37 +1,26 @@
 'use client'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
+import React, { Component } from 'react';
+import Image from 'next/image';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 export function PortfolioCarousel() {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
-
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <>
+      <Carousel>
+        <div>
+            <Image src='./images/icons/sass.svg' width={56} height={56} alt="foto"/>
+            <p className="legend">Legend 1</p>
+        </div>
+        <div>
+            <Image src='./images/icons/sass.svg' width={56} height={56} alt="foto"/>
+            <p className="legend">Legend 2</p>
+        </div>
+        <div>
+            <Image src='./images/icons/sass.svg' width={56} height={56} alt="foto"/>
+            <p className="legend">Legend 3</p>
+        </div>
+      </Carousel>
+    </>
   );
 }
