@@ -9,15 +9,15 @@ export function PortfolioCarousel() {
     <>
       <Carousel>
         <div>
-            <Image src='./images/icons/sass.svg' width={56} height={56} alt="foto"/>
+            <Image src='./images/icons/sass.svg' width={250} height={250} alt="foto"/>
             <p className="legend">Legend 1</p>
         </div>
         <div>
-            <Image src='./images/icons/sass.svg' width={56} height={56} alt="foto"/>
+            <Image src='./images/icons/sass.svg' width={250} height={250} alt="foto"/>
             <p className="legend">Legend 2</p>
         </div>
         <div>
-            <Image src='./images/icons/sass.svg' width={56} height={56} alt="foto"/>
+            <Image src='./images/icons/sass.svg' width={250} height={250} alt="foto"/>
             <p className="legend">Legend 3</p>
         </div>
       </Carousel>
