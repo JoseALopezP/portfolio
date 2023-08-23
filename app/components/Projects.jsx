@@ -67,16 +67,15 @@ function sliceIntoChunks(arr, chunkSize) {
         const chunk = arr.slice(i, i + chunkSize);
         aux.push(chunk);
     }
-    console.log(aux)
     return aux;
 }
 
 export async function Projects() {
     return(
         <>
-            {sliceIntoChunks(ProjectsList, 4).map((ProjectsListPart, i) =>(
+            {sliceIntoChunks(ProjectsList, 4).map((ProjectsListPart, i) => (
                 <div key={i}>
-                    {ProjectsListPart}
+                    {ProjectsListPart[i].pName}
                 </div>
             ))}
         </>
