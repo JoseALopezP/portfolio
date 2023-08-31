@@ -74,6 +74,7 @@ const settings = {
   slidesToShow: 2,
   slidesToScroll: 1
 };
+
 function sliceIntoChunks(arr, chunkSize) {
   const aux = [];
   for (let i = 0; i < arr.length; i += chunkSize) {
@@ -88,7 +89,7 @@ export function PortfolioCarousel(){
       <div>
         <h2> Single Item</h2>
         <Slider {...settings}>
-            {sliceIntoChunks(ProjectsList, 4).map((ProjectsListPart, i) => (
+            {sliceIntoChunks(ProjectsList, 1).map((ProjectsListPart, i) => (
                 <li key={i} className={`${styles.slideProjects} slide`}>
                     <p>{ProjectsListPart.pName}</p>
                     <Image src='./images/icons/sass.svg' width={250} height={250} alt="foto"/>
