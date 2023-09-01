@@ -1,8 +1,8 @@
 'use client'
 import React, {Component} from 'react';
-import styles from './Portfolio.module.css'
+import styles from './Portfolio.module.css';
 import Image from 'next/image';
-import Slider from "react-slick";
+import CarouselSlide from './CarouselSlide.jsx';
 
 const ProjectsList = [{
   pName:"J・oso",
@@ -67,13 +67,6 @@ const ProjectsList = [{
   pGit:"s",
   pPage:"s"
 }]
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 2,
-  slidesToScroll: 1
-};
 
 function sliceIntoChunks(arr, chunkSize) {
   const aux = [];
@@ -84,18 +77,23 @@ function sliceIntoChunks(arr, chunkSize) {
   return aux;
 }
 
-export function PortfolioCarousel(){
-    return (
-      <div>
-        <h2> Single Item</h2>
-        <Slider {...settings}>
-            {sliceIntoChunks(ProjectsList, 1).map((ProjectsListPart, i) => (
-                <li key={i} className={`${styles.slideProjects} slide`}>
-                    <p>{ProjectsListPart.pName}</p>
-                    <Image src='./images/icons/sass.svg' width={250} height={250} alt="foto"/>
-                </li>
-            ))}
-        </Slider>
-      </div>
-    );
-}
+
+
+const PortfolioCarousel = () => {
+  const divs = [
+    <div key={1}>Div 1</div>,
+    <div key={2}>Div 2</div>,
+    <div key={3}>Div 3</div>,
+    <div key={4}>Div 4</div>,
+    // ... more divs
+  ];
+
+  return (
+    <div>
+      <h1>Four Div Carousel</h1>
+      <CarouselSlide items={divs} />
+    </div>
+  );
+};
+
+export default PortfolioCarousel;
