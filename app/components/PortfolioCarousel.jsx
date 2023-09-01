@@ -1,5 +1,5 @@
 'use client'
-import React, {Component} from 'react';
+import React from 'react';
 import styles from './Portfolio.module.css';
 import Image from 'next/image';
 import CarouselSlide from './CarouselSlide.jsx';
