@@ -1,5 +1,5 @@
 import styles from './Portfolio.module.css'
-import { PortfolioCarousel } from './PortfolioCarousel.jsx'
+import PortfolioCarousel from './PortfolioCarousel.jsx'
 
 export function Portfolio () {
     return (

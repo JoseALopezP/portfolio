@@ -6,8 +6,8 @@ import CarouselSlide from './CarouselSlide.jsx';
 
 const ProjectsList = [{
   pName:"J・oso",
-  status:"In-progress",
-  Date:"Current",
+  pStatus:"In-progress",
+  pDate:"Current",
   pImg:"a",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   pGit:"s",
@@ -15,8 +15,8 @@ const ProjectsList = [{
 },
 {
   pName:"RSVP Wedding I",
-  status:"Sold",
-  Date:"Current",
+  pStatus:"Sold",
+  pDate:"Current",
   pImg:"a",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   pGit:"s",
@@ -24,8 +24,8 @@ const ProjectsList = [{
 },
 {
   pName:"RSVP Wedding II",
-  status:"Sold",
-  Date:"Current",
+  pStatus:"Sold",
+  pDate:"Current",
   pImg:"a",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   pGit:"s",
@@ -33,8 +33,8 @@ const ProjectsList = [{
 },
 {
   pName:"Blockudoku",
-  status:"In-progress",
-  Date:"Current",
+  pStatus:"In-progress",
+  pDate:"Current",
   pImg:"a",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   pGit:"s",
@@ -42,8 +42,8 @@ const ProjectsList = [{
 },
 {
   pName:"Web Store II",
-  status:"Finished",
-  Date:"Current",
+  pSstatus:"Finished",
+  pDate:"Current",
   pImg:"a",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   pGit:"s",
@@ -51,8 +51,9 @@ const ProjectsList = [{
 },
 {
   pName:"Web Store I",
-  status:"Finished",
-  Date:"Current",
+  pStatus:"Finished",
+  pTec:['javascript','html','css'],
+  pDate:"Current",
   pImg:"a",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   pGit:"s",
@@ -60,8 +61,8 @@ const ProjectsList = [{
 },
 {
   pName:"Landing page I",
-  status:"Finished",
-  Date:"Current",
+  pStatus:"Finished",
+  pDate:"Current",
   pImg:"a",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   pGit:"s",
@@ -76,16 +77,16 @@ function sliceIntoChunks(arr, chunkSize) {
   }
   return aux;
 }
-
+function mapping(arr){
+  
+}
 
 
 const PortfolioCarousel = () => {
   const divs = [
-    <div key={1}>Div 1</div>,
-    <div key={2}>Div 2</div>,
-    <div key={3}>Div 3</div>,
-    <div key={4}>Div 4</div>,
-    // ... more divs
+    {ProjectsList.map(({pName,pImg,ptext}) =>(
+      <div></div>
+    ))}
   ];
 
   return (
