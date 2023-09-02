@@ -86,26 +86,23 @@ const ImageURLs = {
   'git' : './images/icons/git.svg',
   'nextJS' : './images/icons/next.svg'
 }
-function sliceIntoChunks(arr, chunkSize) {
-  const aux = [];
-  for (let i = 0; i < arr.length; i += chunkSize) {
-      const chunk = arr.slice(i, i + chunkSize);
-      aux.push(chunk);
-  }
-  return aux;
-}
+
 function mapping(arr){
   const aux = []
   arr.map(({pName,pImg,pTec}) =>(
     aux.push(
-      <div className={`${styles.projectBlock}`}>
-          <title>{pName}</title>
-          {pTec.map((ImgUrl)=>(
-            <Image src={ImageURLs[ImgUrl]}
-            key={pName}
-            width={56}
-            height={56}
-            alt={ImgUrl}/>))}
+      <div className={`${styles.projectBlock}`} style={{backgroundImage: "url(" + pImg + ")",}}>
+          <h4>{pName}</h4>
+          <div className={`${styles.projectTechnologiesBlock}`}>
+            {pTec.map((ImgUrl)=>(
+              <Image src={ImageURLs[ImgUrl]}
+              key={pName}
+              width={56}
+              height={56}
+              alt={ImgUrl}
+              className={`${styles.projectTechnologyIcon}`}/>))}
+          </div>
+          <button className={`${styles.projectSeeMoreButton}`}>Ver más</button>
       </div>
     )
   ))
