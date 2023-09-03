@@ -9,7 +9,7 @@ const ProjectsList = [{
   pStatus:"In-progress",
   pTec:['javascript','html','css'],
   pDate:"Current",
-  pImg:"a",
+  pImg:"./images/projects/joso.png",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   pGit:"s",
   pPage:"s"
@@ -19,7 +19,7 @@ const ProjectsList = [{
   pStatus:"Sold",
   pTec:['javascript','html','css'],
   pDate:"Current",
-  pImg:"a",
+  pImg:"./images/projects/rsvp1.png",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   pGit:"s",
   pPage:"s"
@@ -29,7 +29,7 @@ const ProjectsList = [{
   pStatus:"Sold",
   pTec:['javascript','html','css'],
   pDate:"Current",
-  pImg:"a",
+  pImg:"./images/projects/rsvp2.png",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   pGit:"s",
   pPage:"s"
@@ -39,7 +39,7 @@ const ProjectsList = [{
   pStatus:"In-progress",
   pTec:['javascript','html','css'],
   pDate:"Current",
-  pImg:"a",
+  pImg:"./images/projects/blockudoku.png",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   pGit:"s",
   pPage:"s"
@@ -51,7 +51,7 @@ const ProjectsList = [{
   pDate:"Current",
   pImg:"a",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  pGit:"s",
+  pImg:"./images/projects/webstore2.png",
   pPage:"s"
 },
 {
@@ -59,7 +59,7 @@ const ProjectsList = [{
   pStatus:"Finished",
   pTec:['javascript','html','css'],
   pDate:"Current",
-  pImg:"a",
+  pImg:"./images/projects/webstore1.png",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   pGit:"s",
   pPage:"s"
@@ -69,7 +69,7 @@ const ProjectsList = [{
   pStatus:"Finished",
   pTec:['javascript','html','css'],
   pDate:"Current",
-  pImg:"a",
+  pImg:"./images/projects/landingpage1.png",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   pGit:"s",
   pPage:"s"
@@ -114,8 +114,7 @@ const PortfolioCarousel = () => {
   const divs = mapping(ProjectsList)
   return (
     <div>
-      <h1>Four Div Carousel</h1>
-      <CarouselSlide items={divs} />
+      <CarouselSlide items={divs}/>
     </div>
   );
 };
