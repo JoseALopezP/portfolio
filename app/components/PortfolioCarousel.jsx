@@ -1,8 +1,10 @@
 'use client'
-import React from 'react';
-import styles from './Portfolio.module.css';
-import Image from 'next/image';
-import CarouselSlide from './CarouselSlide.jsx';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import React from 'react'
+import styles from './Portfolio.module.css'
+import Image from 'next/image'
+import CarouselSlide from './CarouselSlide.jsx'
+import './customCarousel.css'
 
 const ProjectsList = [{
   pName:"J・oso",

@@ -1,3 +1,40 @@
-.slick-slider{
-    width: 70%;
+.portfolioSection{
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }
+.portfolioTitle{
+    display: inline-flex;
+    margin: auto;
+    align-self: center;
+    font-size: 72px;
+    font-family: 'Play', sans-serif;
+    background: -webkit-linear-gradient(0turn, #00FFA1, #5295FE, #6110DB);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.slideBlock{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-self: center;
+    flex-grow: row;
+    flex-wrap: wrap;
+    height: 700px;
+}
+.carouselItem{
+    width: 45%;
+    height: 45%;
+    margin: 20px;
+    border-radius: 8px;
+    border: solid 1.5px #FAFAFF;
+    color: #FAFAFF;
+}
+
+.projectBlock{
+    background: no-repeat center;
+    background-size: cover;
+}
+

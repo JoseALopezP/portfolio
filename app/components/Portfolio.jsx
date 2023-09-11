@@ -4,7 +4,7 @@ import PortfolioCarousel from './PortfolioCarousel.jsx'
 export function Portfolio () {
     return (
         <section className={`${styles.portfolioSection}`}>
-            <h2>Portfolio</h2>
+            <h2 className={`${styles.portfolioTitle}`}>Portfolio</h2>
             <PortfolioCarousel/>
         </section>
     )

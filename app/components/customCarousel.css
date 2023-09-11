@@ -1,0 +1,29 @@
+.carousel-status{
+    display: none;
+}
+
+.carousel .control-dots .dot{
+    background-color: #021A31;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0px 0px 0px;
+}
+.carousel .control-dots .dot.selected{
+    background-color: #054480;
+    width: 10px;
+    height: 10px;
+}
+
+
+.carousel .control-dots{
+
+}
+
+.carousel .control-arrow:before, .carousel.carousel-slider.control-arrow:before {
+    background-image: url('/public/images/arrow.svg');
+  }
+  
+.carousel .control-next.control-arrow:before {
+    background-image: url('/public/images/arrow.svg');
+}
