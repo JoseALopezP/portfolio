@@ -116,7 +116,7 @@ const PortfolioCarousel = () => {
   const divs = mapping(ProjectsList)
   return (
     <div>
-      <CarouselSlide items={divs}/>
+        <CarouselSlide items={divs}/>
     </div>
   );
 };
