@@ -93,8 +93,8 @@ function mapping(arr){
   const aux = []
   arr.map(({pName,pImg,pTec}) =>(
     aux.push(
-      <div className={`${styles.projectBlock}`} style={{backgroundImage: "url(" + pImg + ")",}}>
-          <h4>{pName}</h4>
+      <div style={{backgroundImage: "url(" + pImg + ")",}} className={`${styles.projectBlock}`}>
+          <h4 className={`${styles.projectName}`}>{pName}</h4>
           <div className={`${styles.projectTechnologiesBlock}`}>
             {pTec.map((ImgUrl)=>(
               <Image src={ImageURLs[ImgUrl]}

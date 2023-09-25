@@ -20,6 +20,8 @@
     width: 90%;
     margin: auto;
     align-self: center;
+    justify-content: center;
+    padding: auto;
     flex-grow: row;
     flex-wrap: wrap;
     height: fit-content;
@@ -37,10 +39,23 @@
 
 .projectBlock{
     position: relative;
-    top: -21.5px;
     background: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
 }
 
+.projectName, .projectTechnologiesBlock, .projectSeeMoreButton{
+    display: none;
+}
+
+.projectBlock:hover{
+    background: #FFFFFF;
+}
+.projectBlock:hover .projectName, .projectBlock:hover .projectTechnologiesBlock, .projectBlock:hover .projectSeeMoreButton{
+    display: block;
+}
+
+.projectName{
+    margin-top: 0px;
+}
