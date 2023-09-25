@@ -17,24 +17,30 @@
 }
 .slideBlock{
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: auto;
     align-self: center;
     flex-grow: row;
     flex-wrap: wrap;
-    height: 700px;
+    height: fit-content;
 }
 .carouselItem{
-    width: 45%;
-    height: 45%;
+    width: 840px;
+    height: 600px;
     margin: 20px;
+    padding: 0px;
     border-radius: 8px;
     border: solid 1.5px #FAFAFF;
     color: #FAFAFF;
+    overflow: hidden;
 }
 
 .projectBlock{
-    background: no-repeat center;
+    position: relative;
+    top: -21.5px;
+    background: no-repeat;
     background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 

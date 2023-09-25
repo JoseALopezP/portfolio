@@ -40,3 +40,7 @@
     border-radius: 8%;
     -webkit-transform: rotate(-45deg);
 }
+
+.carousel * {
+    box-sizing: content-box;
+}
