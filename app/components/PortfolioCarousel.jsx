@@ -9,7 +9,7 @@ import './customCarousel.css'
 const ProjectsList = [{
   pName:"J・oso",
   pStatus:"In-progress",
-  pTec:['javascript','html','css'],
+  pTec:['nextJS','javascript','html','css','firebase','git'],
   pDate:"Current",
   pImg:"./images/projects/joso.png",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -19,7 +19,7 @@ const ProjectsList = [{
 {
   pName:"RSVP Wedding I",
   pStatus:"Sold",
-  pTec:['javascript','html','css'],
+  pTec:['reactJS','javascript','html','css','firebase','git'],
   pDate:"Current",
   pImg:"./images/projects/rsvp1.png",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -29,7 +29,7 @@ const ProjectsList = [{
 {
   pName:"RSVP Wedding II",
   pStatus:"Sold",
-  pTec:['javascript','html','css'],
+  pTec:['reactJS','javascript','html','css','firebase','git'],
   pDate:"Current",
   pImg:"./images/projects/rsvp2.png",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -39,7 +39,7 @@ const ProjectsList = [{
 {
   pName:"Blockudoku",
   pStatus:"In-progress",
-  pTec:['javascript','html','css'],
+  pTec:['javascript','html','css','git'],
   pDate:"Current",
   pImg:"./images/projects/blockudoku.png",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -49,7 +49,7 @@ const ProjectsList = [{
 {
   pName:"Web Store II",
   pSstatus:"Finished",
-  pTec:['javascript','html','css'],
+  pTec:['reactJS','javascript','html','css','firebase','git'],
   pDate:"Current",
   pImg:"a",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -59,7 +59,7 @@ const ProjectsList = [{
 {
   pName:"Web Store I",
   pStatus:"Finished",
-  pTec:['javascript','html','css'],
+  pTec:['javascript','html','css','git'],
   pDate:"Current",
   pImg:"./images/projects/webstore1.png",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -69,7 +69,7 @@ const ProjectsList = [{
 {
   pName:"Landing page I",
   pStatus:"Finished",
-  pTec:['javascript','html','css'],
+  pTec:['html','css','sass','git'],
   pDate:"Current",
   pImg:"./images/projects/landingpage1.png",
   pText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -94,6 +94,7 @@ function mapping(arr){
   arr.map(({pName,pImg,pTec}) =>(
     aux.push(
       <div style={{backgroundImage: "url(" + pImg + ")",}} className={`${styles.projectBlock}`}>
+        <div className={`${styles.projectInside}`}>
           <h4 className={`${styles.projectName}`}>{pName}</h4>
           <div className={`${styles.projectTechnologiesBlock}`}>
             {pTec.map((ImgUrl)=>(
@@ -105,6 +106,7 @@ function mapping(arr){
               className={`${styles.projectTechnologyIcon}`}/>))}
           </div>
           <button className={`${styles.projectSeeMoreButton}`}>Ver más</button>
+        </div>
       </div>
     )
   ))

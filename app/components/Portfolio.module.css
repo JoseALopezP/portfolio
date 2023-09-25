@@ -3,6 +3,7 @@
     justify-content: center;
     text-align: center;
     width: 100%;
+    padding-bottom: 50px;
 }
 .portfolioTitle{
     display: inline-flex;
@@ -17,7 +18,7 @@
 }
 .slideBlock{
     display: flex;
-    width: 90%;
+    width: 70%;
     margin: auto;
     align-self: center;
     justify-content: center;
@@ -25,37 +26,55 @@
     flex-grow: row;
     flex-wrap: wrap;
     height: fit-content;
+    padding: 50px;
 }
 .carouselItem{
-    width: 840px;
-    height: 600px;
+    width: 315px;
+    height: 225px;
     margin: 20px;
     padding: 0px;
     border-radius: 8px;
-    border: solid 1.5px #FAFAFF;
     color: #FAFAFF;
     overflow: hidden;
+    padding: 1.5px;
+    background: linear-gradient(to right, #fafaffd8, #e0e0ff0e);
 }
 
 .projectBlock{
     position: relative;
     background: no-repeat;
     background-size: cover;
+    border-radius: 7px;
     height: 100%;
     width: 100%;
 }
 
-.projectName, .projectTechnologiesBlock, .projectSeeMoreButton{
+.projectInside{
     display: none;
 }
 
 .projectBlock:hover{
-    background-image: !important;
+    background-color: #0000009a;
+    background-blend-mode: multiply;
 }
-.projectBlock:hover .projectName, .projectBlock:hover .projectTechnologiesBlock, .projectBlock:hover .projectSeeMoreButton{
+.projectBlock:hover .projectInside{
+    position: relative;
     display: block;
+    filter:brightness(100%)
 }
 
 .projectName{
     margin-top: 0px;
+}
+
+.projectTechnologiesBlock{
+    display: inline-flex;
+}
+
+.projectSeeMoreButton{
+    border-radius: 48px;
+    background-color: #FFFFFF64;
+    border: solid 2px #FFFFFF16;
+    width: 35%;
+    height: 48px;
 }

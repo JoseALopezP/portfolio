@@ -2,6 +2,10 @@
     display: none;
 }
 
+.carousel .control-dots {
+    position: absolute;
+    top: 96%;
+}
 .carousel .control-dots .dot{
     background-color: #021A31;
     opacity: 1;
