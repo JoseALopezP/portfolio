@@ -50,7 +50,7 @@
 }
 
 .projectBlock:hover{
-    background: #FFFFFF;
+    background-image: !important;
 }
 .projectBlock:hover .projectName, .projectBlock:hover .projectTechnologiesBlock, .projectBlock:hover .projectSeeMoreButton{
     display: block;
