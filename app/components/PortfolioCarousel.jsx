@@ -7,7 +7,7 @@ import CarouselSlide from './CarouselSlide.jsx'
 import './customCarousel.css'
 
 const ProjectsList = [{
-  pName:"J・oso",
+  pName:"J.oso",
   pStatus:"In-progress",
   pTec:['nextJS','javascript','html','css','firebase','git'],
   pDate:"Current",
@@ -100,8 +100,8 @@ function mapping(arr){
             {pTec.map((ImgUrl)=>(
               <Image src={ImageURLs[ImgUrl]}
               key={pName}
-              width={56}
-              height={56}
+              width={50}
+              height={50}
               alt={ImgUrl}
               className={`${styles.projectTechnologyIcon}`}/>))}
           </div>

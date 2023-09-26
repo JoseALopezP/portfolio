@@ -37,7 +37,16 @@
     color: #FAFAFF;
     overflow: hidden;
     padding: 1.5px;
-    background: linear-gradient(to right, #fafaffd8, #e0e0ff0e);
+    background: linear-gradient(to right, #fafaffd8, #fafaffd8, #e0e0ff0e); 
+    background-size: 300% 300%;
+    background-position: 100% 0%;
+    animation: hoveringProjectOut 0.7s ease-in-out ;
+    animation-fill-mode: forwards;
+}
+.carouselItem:hover{
+    animation: hoveringProject 0.7s ease-in-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
 }
 
 .projectBlock{
@@ -47,6 +56,8 @@
     border-radius: 7px;
     height: 100%;
     width: 100%;
+    background-blend-mode: multiply;
+    animation: hoveringProjectBackgroundOut .4s forwards;
 }
 
 .projectInside{
@@ -54,16 +65,22 @@
 }
 
 .projectBlock:hover{
-    background-color: #0000009a;
     background-blend-mode: multiply;
+    animation: hoveringProjectBackground .2s forwards;
 }
 .projectBlock:hover .projectInside{
+    align-items: center;
     position: relative;
-    display: block;
-    filter:brightness(100%)
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
 .projectName{
+    font-weight: 700;
+    padding-top: 20px;
+    height: 30px;
+    vertical-align: middle;
+    font-size: 24px;
     margin-top: 0px;
 }
 
@@ -77,4 +94,55 @@
     border: solid 2px #FFFFFF16;
     width: 35%;
     height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 30px;
 }
+.projectSeeMoreButton:hover{
+    animation: seeMoreButton .3s forwards;
+}
+
+@keyframes hoveringProject{
+    0% {
+		background-position: 100% 0%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+@keyframes hoveringProjectOut{
+    0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 100% 0%;
+	}
+}
+@keyframes hoveringProjectBackground{
+    0% {
+		background-color: #00000000;
+	}
+	100% {
+		background-color: #0000009a;
+	}
+}
+@keyframes hoveringProjectBackgroundOut{
+    0% {
+		background-color: #0000009a;
+	}
+	100% {
+		background-color: #00000000;
+	}
+}
+@keyframes seeMoreButton{
+    0% {
+		background-color: #FFFFFF64;
+        border: solid 2px #FFFFFF16;
+	}
+	100% {
+		background-color: #FFFFFF16;
+        border: solid 2px #FFFFFF64;
+	}
+}
+
