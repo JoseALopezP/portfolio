@@ -12,6 +12,7 @@
     width: 10px;
     height: 10px;
     box-shadow: 0px 0px 0px;
+    margin-right: 9px;
 }
 .carousel .control-dots .dot.selected{
     background-color: #054480;

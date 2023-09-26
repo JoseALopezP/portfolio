@@ -39,7 +39,6 @@
     border-image: linear-gradient(90deg, #00FFA1 0%, #5295FE 50%, #6110DB 100%) 1;
     overflow: hidden;
     white-space: nowrap;
-    /*width: 480px;*/
     animation:
         typingAnimation 1.5s steps(1),
         .6s cursorBlinking 1.5s step-end infinite alternate,
