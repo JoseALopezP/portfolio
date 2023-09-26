@@ -7,12 +7,12 @@ export function Contact () {
                 <h4 className={`${styles.contactTitle}`}>Contact</h4>
                 <form className={`${styles.contactForm}`} action="" method="post">
                     <label for="POST-name">Nombre</label>
-                    <input className={`${styles.textInput}`} id="POST-name" type="text" name="Tu nombre" />
+                    <input className={`${styles.textInput}`} id="POST-email" type="text" name="Tu nombre" placeholder="Tu nombre"/>
                     <label for="POST-name">Email</label>
-                    <input className={`${styles.textInput}`} id="POST-name" type="text" name="Tu email" />
+                    <input className={`${styles.textInput}`} id="POST-name" type="text" name="Tu email" placeholder="Tu email"/>
                     <label for="POST-name">Mensaje</label>
-                    <input className={`${styles.textInput}`} id="POST-name" type="text" name="Tu mensaje" />
-                    <input type="submit" value="Enviar →" />
+                    <textarea className={`${styles.textInput} ${styles.textInputMessage}`} id="POST-message" type="text" name="Tu mensaje" placeholder="Tu mensaje"/>
+                    <input className={`${styles.submitButton}`} type="submit" value="Enviar" />
                 </form>
             </div>
         </div>
