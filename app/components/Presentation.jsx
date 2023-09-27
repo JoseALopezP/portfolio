@@ -3,7 +3,7 @@ import styles from './Presentation.module.css'
 export function Presentation () {
     return (
         <>
-            <div className={`${styles.presentationBlock}`}>
+            <section className={`${styles.presentationBlock}`} id='home'>
                 <div className={`${styles.presentationTextBlock}`}>
                     <p className={`${styles.presentationText1}`}>¡Hola! Soy</p>
                     <div className={`${styles.typewritterBlock} ${styles.presentationText2}`}>
@@ -11,7 +11,7 @@ export function Presentation () {
                     </div>
                     <p className={`${styles.presentationText3}`}>&lt;<strong> Web Developer </strong>/&gt;</p>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

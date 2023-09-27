@@ -1,16 +1,18 @@
 import styles from './NavBar.module.css'
 import { LanguageOptions } from './LanguageOptions'
+import Router, { useRouter } from 'next/router'
 import Link from 'next/link'
 
 export function NavBar () {
+    const router = useRouter()
     return (
         <header className={`${styles.headerBlock}`}>
             <nav className={`${styles.navList}`}>
                 <ul>
-                    <li><Link href="#">Home</Link></li>
-                    <li><Link href="#">Sobre mí</Link></li>
-                    <li><Link href="#">Portfolio</Link></li>
-                    <li><Link href="#">Contacto</Link></li>
+                    <li><Link href='#home' activeClass="active" to="home" className={`${router.pathname}`} >Home</Link></li>
+                    <li><Link href='#about' activeClass="active" to="about">Sobre mí</Link></li>
+                    <li><Link href='#portfolio' activeClass="active" to="portfolio">Portfolio</Link></li>
+                    <li><Link href='#contact' activeClass="active" to="contact">Contacto</Link></li> 
                 </ul>
             </nav>
             <div className={`${styles.languageOptionsBlock}`}>

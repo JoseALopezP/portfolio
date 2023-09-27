@@ -2,7 +2,7 @@ import styles from './Contact.module.css'
 
 export function Contact () {
     return (
-        <div className={`${styles.wavesBlock}`}>
+        <section className={`${styles.wavesBlock}`} id='contact'>
             <div className={`${styles.contactBlock}`}>
                 <h4 className={`${styles.contactTitle}`}>Contact</h4>
                 <form className={`${styles.contactForm}`} action="" method="post">
@@ -15,6 +15,6 @@ export function Contact () {
                     <input className={`${styles.submitButton}`} type="submit" value="Enviar" />
                 </form>
             </div>
-        </div>
+        </section>
     )
 }
