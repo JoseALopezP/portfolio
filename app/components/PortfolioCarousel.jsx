@@ -96,22 +96,23 @@ function mapping(arr){
   function handleClick(currentProject){
     setActiveProject(currentProject)
   }
-  arr.map(({pName,pImg,pTec}) =>(
+  arr.map((project) =>(
     aux.push(
-      <div style={{backgroundImage: "url(" + pImg + ")",}} className={`${styles.projectBlock}`}>
+      <div style={{backgroundImage: "url(" + project.pImg + ")",}} className={`${styles.projectBlock}`}>
         <div className={`${styles.projectInside}`}>
-          <h4 className={`${styles.projectName}`}>{pName}</h4>
+          <h4 className={`${styles.projectName}`}>{project.pName}</h4>
           <div className={`${styles.projectTechnologiesBlock}`}>
-            {pTec.map((ImgUrl)=>(
+            {project.pTec.map((ImgUrl)=>(
               <Image src={ImageURLs[ImgUrl]}
-              key={pName}
+              key={project.pName}
               width={50}
               height={50}
-              alt={ImgUrl}
+              alt={project.ImgUrl}
               className={`${styles.projectTechnologyIcon}`}/>))}
           </div>
           <button onClick={handleClick} className={`${styles.projectSeeMoreButton}`}>Ver más</button>
         </div>
+        <SeeMoreProject proj={project}/>
       </div>
     )
   ))
