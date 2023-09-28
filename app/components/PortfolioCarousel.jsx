@@ -1,9 +1,10 @@
 'use client'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import React from 'react'
+import { useState } from 'react'
 import styles from './Portfolio.module.css'
 import Image from 'next/image'
 import CarouselSlide from './CarouselSlide.jsx'
+import { SeeMoreProject } from './SeeMoreProject'
 import './customCarousel.css'
 
 const ProjectsList = [{
@@ -90,7 +91,11 @@ const ImageURLs = {
 }
 
 function mapping(arr){
+  const [activeProject, setActiveProject] = useState('')
   const aux = []
+  function handleClick(currentProject){
+    setActiveProject(currentProject)
+  }
   arr.map(({pName,pImg,pTec}) =>(
     aux.push(
       <div style={{backgroundImage: "url(" + pImg + ")",}} className={`${styles.projectBlock}`}>
@@ -105,7 +110,7 @@ function mapping(arr){
               alt={ImgUrl}
               className={`${styles.projectTechnologyIcon}`}/>))}
           </div>
-          <button className={`${styles.projectSeeMoreButton}`}>Ver más</button>
+          <button onClick={handleClick} className={`${styles.projectSeeMoreButton}`}>Ver más</button>
         </div>
       </div>
     )

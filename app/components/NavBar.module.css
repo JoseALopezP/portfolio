@@ -127,6 +127,10 @@
     animation-fill-mode: forwards;
 }
 
+.active{
+    background-color: #FAFAFF;
+}
+
 @keyframes hoverLang{
     0%{
         opacity: 1;
