@@ -90,7 +90,7 @@ const ImageURLs = {
   'nextJS' : './images/icons/next.svg'
 }
 
-function mapping(arr){
+function Mapping(arr){
   const [activeProject, setActiveProject] = useState('')
   const aux = []
   function handleClick(currentProject){
@@ -121,7 +121,7 @@ function mapping(arr){
 
 
 const PortfolioCarousel = () => {
-  const divs = mapping(ProjectsList)
+  const divs = Mapping(ProjectsList)
   return (
     <div>
         <CarouselSlide items={divs}/>
