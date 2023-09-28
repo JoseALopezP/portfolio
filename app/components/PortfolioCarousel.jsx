@@ -110,9 +110,9 @@ function mapping(arr){
               alt={project.ImgUrl}
               className={`${styles.projectTechnologyIcon}`}/>))}
           </div>
-          <button onClick={handleClick} className={`${styles.projectSeeMoreButton}`}>Ver más</button>
+          <button onClick={handleClick(project)} className={`${styles.projectSeeMoreButton}`}>Ver más</button>
         </div>
-        <SeeMoreProject proj={project}/>
+        <SeeMoreProject proj={activeProject}/>
       </div>
     )
   ))
